@@ -6,7 +6,9 @@ This version has a partial GUI interface from which you can select directories [
 ## Install
 1. Install [dependencies](#dependencies)
 2. Download the repository
+
   Use Git
+  
     ```
     cd ~/Downloads
     git clone https://github.com/TheCoolBlackCat/PICFINDER.git
