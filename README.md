@@ -9,6 +9,7 @@ This version has a partial GUI interface from which you can select directories [
     ```
     cd ~/Downloads
     git clone https://github.com/TheCoolBlackCat/PICFINDER.git
+    cd PICFINDER
     git checkout gui
     ```
 
