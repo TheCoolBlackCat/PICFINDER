@@ -15,6 +15,7 @@ def isPic (file):
 # Traverse directory (and subdirectories)
 def findPics(root):
     dir = os.listdir(root)
+    print("Now searching: "+root)
     res = []
     for f in dir:
         path = os.path.join(root,f)
@@ -29,7 +30,7 @@ def savePics (pics, dest):
     if not os.path.exists(dest):
         os.makedirs(dest)
         for pic in pics:
-            print (os.path.basename(pic))
+            print ("Now saving: "+os.path.basename(pic))
             try:
                 shutil.copy(pic, os.path.join(dest, os.path.basename(pic)))
             except IOError as e:
