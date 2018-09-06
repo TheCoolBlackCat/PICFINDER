@@ -8,6 +8,7 @@ This branch has a fully text-based interface [(Switch Branch)](https://github.co
 2. Download the repository
 
   Use Git
+  
     ```
     cd ~/Downloads
     git clone https://github.com/TheCoolBlackCat/PICFINDER.git
