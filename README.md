@@ -1,6 +1,8 @@
 # PICFINDER
 Simple Python 3 command line application to find all pictures in a directory and its subdirectories
 
+This version has a simple GUI interface from which you can select directories
+
 ## Install
 1. Download the repository
   Use Git
