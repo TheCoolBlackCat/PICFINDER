@@ -32,6 +32,8 @@ OR
 
 From a terminal, run ```./picfinder.py```
 
+You may need to run it as *root*
+
 ## Dependencies
 * os
 * shutil
