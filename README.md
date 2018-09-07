@@ -1,7 +1,5 @@
 # PICFINDER
-Simple Python 3 command line application to find all pictures in a directory and its subdirectories
-
-This branch has a fully text-based interface [(Switch Branch)](https://github.com/TheCoolBlackCat/PICFINDER/tree/gui)
+Simple Python 3 command line (partial GUI) application to find all pictures in a directory and its subdirectories
 
 ## Install
 1. Install [dependencies](#dependencies)
@@ -37,9 +35,10 @@ You may need to run it as *root*
 ## Dependencies
 * os
 * shutil
+* tkinter
 
 These should be within standard Python 3 libraries
 
-You can install Python 3 with: ```sudo apt install python3```
+You can install Python 3 and Tkinter with: ```sudo apt install python3 python3-tk```
 
 TL;DR Just Python 3 installed!

@@ -2,6 +2,12 @@
 
 import os
 import shutil
+from tkinter import Tk
+from tkinter import filedialog
+
+# Initialise Window
+root = Tk()
+root.withdraw()
 
 extensions = ["jpg", "jpeg", "png", "gif", "bmp", "tiff"];
 
@@ -27,22 +33,19 @@ def findPics(root):
 
 # Save pictures to directory
 def savePics (pics, dest):
-    if not os.path.exists(dest):
-        os.makedirs(dest)
-        for pic in pics:
-            print ("Now saving: "+os.path.basename(pic))
-            try:
-                shutil.copy(pic, os.path.join(dest, os.path.basename(pic)))
-            except IOError as e:
-                print("Unable to copy file: %s" % e)
-            except:
-                print("Unexpected error:", sys.exc_info())
-    else:
-        print ("ERROR: Directory Exists")
+    for pic in pics:
+        print ("Now saving: "+os.path.basename(pic))
+        try:
+            shutil.copy(pic, os.path.join(dest, os.path.basename(pic)))
+        except IOError as e:
+            print("Unable to copy file: %s" % e)
+        except:
+            print("Unexpected error:", sys.exc_info())
 
 
 
-print ("PICFINDER!")
+print (":::::::::: PICFINDER! ::::::::::")
+print()
 
 # List extensions to look for
 print ("Will search for files ending: ", end="")
@@ -54,7 +57,8 @@ for e in extensions:
 print()
 
 # Get and Check source directory
-source = input("Where do you want me to look for pictures? ");
+print("Where do you want me to look for pictures? ")
+source = filedialog.askdirectory()
 if (not os.path.isdir(source)):
     print("That directory doesn't exists, will quit now")
     quit()
@@ -63,13 +67,10 @@ else:
     print()
 
 # Get and Check destination directory
-destination = input("Where do you want me to save them? ");
-if (os.path.exists(destination)):
-    print("That directory already exists, will quit now")
-    quit()
-else:
-    print ("Will save to: "+destination)
-    print()
+print("Where do you want me to save them? ")
+destination = filedialog.askdirectory()
+print ("Will save to: "+destination)
+print()
 
 ## TEST
 # source = "PICS"
