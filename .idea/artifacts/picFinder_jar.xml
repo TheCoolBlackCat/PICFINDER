@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="picFinder:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/picFinder_jar</output-path>
+    <root id="archive" name="picFinder.jar">
+      <element id="module-output" name="picFinder" />
+      <element id="dir-copy" path="$PROJECT_DIR$/resources" />
+    </root>
+  </artifact>
+</component>
